@@ -1,0 +1,80 @@
+/* Homepage styles are scoped so resource pages keep their existing layout. */
+.home-page { background: #faf8f1; }
+.home-page #home {
+  display: block;
+  min-height: 100vh;
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 32px 32px;
+  background: transparent;
+  color: #243c51;
+}
+.home-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 24px 0; border-bottom: 1px solid #dedfd5; }
+.home-brand { display: inline-flex; align-items: center; gap: 10px; color: inherit; font-weight: 700; text-decoration: none; }
+.home-header-note { font-size: 12px; color: #616d70; }
+.home-hero { position: relative; padding: 64px 0 48px; }
+.home-eyebrow { margin: 0 0 16px; color: #5c696e; font-size: 11px; letter-spacing: .16em; font-weight: 700; }
+.home-hero h1 { position: relative; z-index: 1; font-family: "Noto Serif SC", serif; font-size: clamp(36px, 4.8vw, 58px); line-height: 1.35; letter-spacing: .02em; margin: 0 0 22px; }
+.home-hero h1 span { color: #b65436; }
+.home-intro { color: #5c696e; font-size: 14px; line-height: 1.9; margin: 0 0 28px; }
+.home-primary { display: inline-flex; align-items: center; gap: 32px; padding: 13px 22px; border-radius: 12px; background: #243c51; color: white; text-decoration: none; font-size: 14px; font-weight: 700; transition: background .2s; }
+.home-primary:hover { background: #35576c; }
+.home-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.home-tags span { border: 1px solid #dedfd5; border-radius: 999px; padding: 4px 12px; font-size: 11px; color: #5c696e; }
+.home-hero-art { position: absolute; right: 24px; top: 52px; width: 340px; height: 340px; display: grid; place-items: center; border-radius: 50%; background: #e8eee8; transform: rotate(-5deg); }
+.home-hero-art img { position: absolute; inset: 7%; width: 86%; height: 86%; object-fit: contain; mix-blend-mode: multiply; }
+.home-art-label { position: absolute; bottom: 8px; right: -4px; padding: 8px 16px; background: #fffdf6; border: 1px solid #dedfd5; border-radius: 8px; color: #5c696e; font-size: 12px; transform: rotate(5deg); }
+.home-directory { padding: 26px 0 40px; border-top: 1px solid #dedfd5; }
+.home-section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 22px; }
+.home-section-head .home-eyebrow { margin-bottom: 6px; }
+.home-section-head h2 { font-family: "Noto Serif SC", serif; font-size: 26px; margin: 0; }
+.home-section-head > p { font-size: 12px; color: #5c696e; margin: 0 0 4px; }
+.home-year-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.home-year-card { position: relative; display: flex; flex-direction: column; align-items: center; min-width: 0; padding: 16px 18px 22px; border: 1px solid #e0e3da; border-radius: 18px; background: #fffdf8; color: inherit; text-decoration: none; transition: transform .2s, border-color .2s, box-shadow .2s; }
+.home-card-top { display: flex; align-items: center; justify-content: space-between; align-self: stretch; }
+.home-card-kicker { font-size: 10px; letter-spacing: .08em; color: #5c696e; }
+.home-card-arrow { font-size: 20px; color: #6b787a; }
+.home-year-card img { width: 112px; height: 112px; object-fit: contain; margin: 6px 0 8px; mix-blend-mode: multiply; }
+.home-year-card h3 { font-size: 28px; font-family: "Noto Serif SC", serif; margin: 0; line-height: 1.4; }
+.home-year-card h3 span { font-size: 13px; font-weight: 500; margin-left: 6px; }
+.home-year-card > p { color: #5c696e; font-size: 11px; margin: 6px 0 0; }
+.home-year-latest { background: #edf2eb; border-color: #b7c8b5; }
+.home-year-latest .home-card-kicker { color: #386348; font-weight: 700; }
+.home-exam-card { background: #f8eee4; border-color: #e5cdb7; }
+.home-exam-card h3 { font-size: 20px; }
+.home-exam-card .home-card-kicker { color: #9b4c2d; font-weight: 700; }
+.home-year-card:hover { transform: translateY(-4px); border-color: #93a99b; box-shadow: 0 10px 24px #243c510d; }
+.home-page a:focus-visible, .home-page button:focus-visible, #year-directory:focus-visible { outline: 3px solid #b65436; outline-offset: 5px; }
+.home-skip { position: fixed; top: 8px; left: 8px; z-index: 10000; transform: translateY(-160%); background: #243c51; color: white; padding: 10px 16px; border-radius: 8px; }
+.home-skip:focus { transform: none; }
+.home-footer { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding-top: 20px; border-top: 1px solid #dedfd5; }
+.home-page .home-foot { color: #5c696e; margin: 0; font-size: 11px; }
+.home-page .ack-entry { margin: 0; font-size: 11px; color: #5c696e; }
+.home-footer-motto { margin-left: auto; font-size: 11px; color: #5c696e; }
+@media (max-width: 900px) {
+  .home-hero-art { width: 260px; height: 260px; right: 0; top: 68px; }
+  .home-hero h1 { font-size: 44px; }
+  .home-year-grid { gap: 12px; }
+  .home-year-card { padding-inline: 12px; }
+}
+@media (max-width: 680px) {
+  .home-page #home { padding: 0 20px 24px; }
+  .home-header { padding: 18px 0; }
+  .home-brand { font-size: 14px; gap: 8px; }
+  .home-header-note { display: none; }
+  .home-hero { padding: 36px 0 32px; }
+  .home-hero h1 { font-size: clamp(32px, 7vw, 44px); }
+  .home-hero-art { display: none; }
+  .home-intro { font-size: 13px; }
+  .home-section-head { display: block; }
+  .home-section-head h2 { font-size: 23px; }
+  .home-section-head > p { margin-top: 8px; }
+  .home-year-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-year-card img { width: 96px; height: 96px; }
+  .home-exam-card h3 { font-size: 18px; }
+  .home-footer-motto { flex-basis: 100%; margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-page *, .home-page *::before, .home-page *::after { animation: none !important; transition: none !important; }
+  .home-year-card:hover { transform: none; }
+}

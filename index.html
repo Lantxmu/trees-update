@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>高考真题资料导航</title>
-  <link rel="icon" href="assets/facivon.svg" type="image/svg+hml">
+  <meta name="description" content="福建高考备考资料导航，按届别查找省内全科原卷、答案、听力与解析。">
+  <title>福建高考备考导航 · 资料目录</title>
+  <link rel="icon" href="assets/facivon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
 </head>
-
-<body>
-  <div id="home">
-    <div class="np-masthead np-mast-home">
-      <div class="np-mast-left">
-        <div class="np-edition">福建高考备考资料导航 · 全站目录</div>
-        <h1 class="np-paper-name">福建高考备考导航</h1>
-        <div class="np-headline">八届资料 · 一图直达 · 全科真卷</div>
-        <div class="np-deck">2021 届 — 2027 届 ｜ 点击猫咪环上的届别圆点查看对应资料目录</div>
-      </div>
-    </div>
-    <h2 class="home-title">选择届别查看资料</h2>
-    <p class="home-sub">点选下方布偶猫环上的年份，直达该届资料目录</p>
-    <div class="stage">
-      <a href="2021.html" class="hotspot" style="left:12.5%;top:27.16%" aria-label="2021届">2021届</a>
-      <a href="2022.html" class="hotspot" style="left:37.5%;top:27.16%" aria-label="2022届">2022届</a>
-      <a href="2023.html" class="hotspot" style="left:62.5%;top:27.16%" aria-label="2023届">2023届</a>
-      <a href="2024.html" class="hotspot" style="left:87.5%;top:27.16%" aria-label="2024届">2024届</a>
-      <a href="2025.html" class="hotspot" style="left:12.5%;top:77.16%" aria-label="2025届">2025届</a>
-      <a href="2026.html" class="hotspot" style="left:37.5%;top:77.16%" aria-label="2026届">2026届</a>
-      <a href="2027.html" class="hotspot" style="left:62.5%;top:77.16%" aria-label="2027届">2027届</a>
-      <a href="gaokao.html" class="hotspot hotspot-long" style="left:87.5%;top:77.16%"
-        aria-label="2021-2026福建高考真题">2021-2026<br>福建高考真题</a>
-    </div>
-    <p class="home-foot">资料持续整理中 · 全科原卷 / 答案 / 听力 / 解析</p>
-  </div>
-  </div>
-  </div>
-  <script src="tree.js"></script>
+<body class="home-page">
+  <a class="home-skip" href="#year-directory">跳转到资料目录</a>
+  <main id="home">
+    <header class="home-header">
+      <a class="home-brand" href="index.html"><img src="assets/paw.svg" width="28" height="28" alt="">福建高考备考导航</a>
+      <span class="home-header-note">省内资料 · 免费共享</span>
+    </header>
+    <section class="home-hero" aria-labelledby="home-heading">
+      <p class="home-eyebrow">福建高考 · 备考资料库</p>
+      <h1 id="home-heading">少一点找题，<br>多一点<span>安心备考。</span></h1>
+      <p class="home-intro">把省内各届备考资料整理在一起。<br>选好你的届别，原卷、答案、听力与解析，一站直达。</p>
+      <a class="home-primary" href="2027.html">查看 2027 届资料 <span aria-hidden="true">↗</span></a>
+      <div class="home-tags" aria-label="资料范围"><span>2021 — 2027 届</span><span>全科资料</span><span>持续整理</span></div>
+      <div class="home-hero-art" aria-hidden="true"><span class="home-art-label">陪你刷题，也陪你向前。</span><img src="assets/ragdoll_blue_point.png" width="320" height="320" alt=""></div>
+    </section>
+    <section class="home-directory" aria-labelledby="year-directory">
+      <div class="home-section-head"><div><p class="home-eyebrow">资料目录 / DIRECTORY</p><h2 id="year-directory" tabindex="-1">从你的届别开始</h2></div><p>点击卡片，查看对应资料目录 <span aria-hidden="true">↓</span></p></div>
+      <nav class="home-year-grid" aria-label="各届备考资料">
+        <a class="home-year-card" href="2021.html">
+          <div class="home-card-top"><span class="home-card-kicker">备考资料</span><span class="home-card-arrow" aria-hidden="true">↗</span></div>
+          <img src="assets/ragdoll_seal_point.png" width="120" height="120" loading="lazy" alt="">
+          <h3>2021<span>届</span></h3><p>查看资料目录</p>
+        </a>
+        <a class="home-year-card" href="2022.html">
+          <div class="home-card-top"><span class="home-card-kicker">备考资料</span><span class="home-card-arrow" aria-hidden="true">↗</span></div>
+          <img src="assets/ragdoll_blue_point.png" width="120" height="120" loading="lazy" alt="">
+          <h3>2022<span>届</span></h3><p>查看资料目录</p>
+        </a>
+        <a class="home-year-card" href="2023.html">
+          <div class="home-card-top"><span class="home-card-kicker">备考资料</span><span class="home-card-arrow" aria-hidden="true">↗</span></div>
+          <img src="assets/ragdoll_chocolate_point.png" width="120" height="120" loading="lazy" alt="">
+          <h3>2023<span>届</span></h3><p>查看资料目录</p>
+        </a>
+        <a class="home-year-card" href="2024.html">
+          <div class="home-card-top"><span class="home-card-kicker">备考资料</span><span class="home-card-arrow" aria-hidden="true">↗</span></div>
+          <img src="assets/ragdoll_lilac_point.png" width="120" height="120" loading="lazy" alt="">
+          <h3>2024<span>届</span></h3><p>查看资料目录</p>
+        </a>
+        <a class="home-year-card" href="2025.html">
+          <div class="home-card-top"><span class="home-card-kicker">备考资料</span><span class="home-card-arrow" aria-hidden="true">↗</span></div>
+          <img src="assets/ragdoll_cream_point.png" width="120" height="120" loading="lazy" alt="">
+          <h3>2025<span>届</span></h3><p>查看资料目录</p>
+        </a>
+        <a class="home-year-card" href="2026.html">
+          <div class="home-card-top"><span class="home-card-kicker">备考资料</span><span class="home-card-arrow" aria-hidden="true">↗</span></div>
+          <img src="assets/ragdoll_flame_point.png" width="120" height="120" loading="lazy" alt="">
+          <h3>2026<span>届</span></h3><p>查看资料目录</p>
+        </a>
+        <a class="home-year-card home-year-latest" href="2027.html">
+          <div class="home-card-top"><span class="home-card-kicker">最新届别</span><span class="home-card-arrow" aria-hidden="true">↗</span></div>
+          <img src="assets/ragdoll_seal_lynx_point.png" width="120" height="120" loading="lazy" alt="">
+          <h3>2027<span>届</span></h3><p>查看资料目录</p>
+        </a>
+        <a class="home-year-card home-exam-card" href="gaokao.html">
+          <div class="home-card-top"><span class="home-card-kicker">真题专区</span><span class="home-card-arrow" aria-hidden="true">↗</span></div>
+          <img src="assets/ragdoll_tortie_point.png" width="120" height="120" loading="lazy" alt="">
+          <h3>福建高考真题</h3><p>2021 — 2026 年</p>
+        </a>
+      </nav>
+    </section>
+    <footer class="home-footer"><p class="home-foot">资料持续整理中 · 全科原卷 / 答案 / 听力 / 解析</p><span class="home-footer-motto">乾坤未定，你我皆是黑马。</span></footer>
+  </main>
   <script src="welcome-popup.js"></script>
 </body>
-
 </html>
